@@ -1,3 +1,6 @@
+import { Social } from "../../components/Social";
+
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 
 export function Home() {
@@ -16,7 +19,15 @@ export function Home() {
                 </section>
 
                 <footer className="flex justify-center gap-3 my-4">
-
+                    <Social url="https://github.com/kenzotanaka17/"> 
+                        <FaGithub size={35} color="#fff"/>
+                    </Social>
+                    <Social url="https://instagram.com/kenzotanaka_"> 
+                        <FaInstagram size={35} color="#fff"/>
+                    </Social>
+                    <Social url="https://www.linkedin.com/in/kenzo-tanaka/"> 
+                        <FaLinkedin size={35} color="#fff"/>
+                    </Social>
                 </footer>
             </main>
         </div>
