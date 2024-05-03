@@ -5,6 +5,7 @@ import { Admin } from "./pages/admin"
 import { Login } from "./pages/login"
 import { Networks } from "./pages/networks"
 import { Private } from "./routes/private"
+import { ErrorPage } from "./pages/error"
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       <Private>
         <Networks />
       </Private>
+  },
+  {
+    path: "*",
+    element: <ErrorPage />
   }
 ]) 
 
